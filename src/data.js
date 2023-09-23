@@ -1,6 +1,5 @@
 export const albumCollection = [
   {
-    id: 1,
     title: "Abbey Road",
     artist: "The Beatles",
     year: 1969,
@@ -10,7 +9,6 @@ export const albumCollection = [
     spotifyId: "0ETFjACtuP2ADo6LFhL6HN",
   },
   {
-    id: 2,
     title: "Thriller",
     artist: "Michael Jackson",
     year: 1983,
@@ -20,7 +18,6 @@ export const albumCollection = [
     spotifyId: "2ANVost0y2y52ema1E9xAZ",
   },
   {
-    id: 3,
     title: "Synchronicity",
     artist: "The Police",
     year: 1983,
@@ -30,7 +27,6 @@ export const albumCollection = [
     spotifyId: "5W9OT0a5iZlBr83a9WMKFY",
   },
   {
-    id: 4,
     title: "21",
     artist: "Adele",
     year: 2011,
@@ -39,7 +35,6 @@ export const albumCollection = [
     spotifyId: "0Lg1uZvI312TPqxNWShFXL",
   },
   {
-    id: 5,
     title: "Revolver",
     artist: "The Beatles",
     year: 1966,
@@ -49,7 +44,6 @@ export const albumCollection = [
     spotifyId: "3PRoXYsngSwjEQWR5PsHWR",
   },
   {
-    id: 6,
     title: "Tapestry",
     artist: "Carole King",
     year: 1971,
@@ -59,7 +53,6 @@ export const albumCollection = [
     spotifyId: "12n11cgnpjXKLeqrnIERoS",
   },
   {
-    id: 7,
     title: "Tea for the Tillerman",
     artist: "Cat Stevens",
     year: 1970,
@@ -69,7 +62,6 @@ export const albumCollection = [
     spotifyId: "44VxbAytHpVi3Rq8hRhild",
   },
   {
-    id: 8,
     title: "So",
     artist: "Peter Gabriel",
     year: 1986,
@@ -79,7 +71,6 @@ export const albumCollection = [
     spotifyId: "2ikq6LspaBbUG2qyiV5qdx",
   },
   {
-    id: 9,
     title: "Telemann in the French Style",
     artist: "The Hanoverian Ensemble",
     year: 2009,
