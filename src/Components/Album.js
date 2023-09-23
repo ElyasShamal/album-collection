@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { starRating } from "../utility";
 import Player from "./Player";
 
 function Album({ album }) {
-  const showPlayer = false;
   const { title, artist, year, rating, coverUrl, spotifyId } = album;
+
+  const [showPlayer, setShowplayer] = useState(false);
+
+  function handleClick() {
+    setShowplayer((showPlayer) => !showPlayer);
+  }
 
   return (
     <div className="album">
@@ -17,9 +22,13 @@ function Album({ album }) {
         <div className="player">
           <Player spotifyId={spotifyId} />
         </div>
-      ) : null}
-
-      <img src={coverUrl} alt={`Cover art of album ${title}`} />
+      ) : (
+        <img
+          src={coverUrl}
+          alt={`Cover art of album ${title}`}
+          onClick={handleClick}
+        />
+      )}
     </div>
   );
 }
