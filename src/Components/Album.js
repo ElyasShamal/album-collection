@@ -11,6 +11,10 @@ function Album({ album }) {
     setShowplayer((showPlayer) => !showPlayer);
   }
 
+  function handleClose() {
+    setShowplayer(false);
+  }
+
   return (
     <div className="album">
       <h2>{title}</h2>
@@ -21,6 +25,9 @@ function Album({ album }) {
       {showPlayer ? (
         <div className="player">
           <Player spotifyId={spotifyId} />
+          <button className="close-btn" onClick={handleClose}>
+            Close
+          </button>
         </div>
       ) : (
         <img

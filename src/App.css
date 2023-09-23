@@ -60,6 +60,12 @@ body {
   justify-content: center;
 }
 
+.close-btn {
+  background-color: red;
+  padding: 6px 0;
+  color: white;
+  border-radius: 20px;
+}
 @media (min-width: 1024px) {
   .albums {
     grid-template-columns: 1fr 1fr 1fr;
