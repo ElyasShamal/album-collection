@@ -3,6 +3,7 @@ import { starRating } from "../utility";
 import Player from "./Player";
 
 function Album({ album }) {
+  const showPlayer = false;
   const { title, artist, year, rating, coverUrl, spotifyId } = album;
 
   return (
@@ -11,9 +12,13 @@ function Album({ album }) {
       <p>{artist}</p>
       <p>{year}</p>
       <p>Rating : {starRating(rating)}</p>
-      <div className="player">
-        <Player spotifyId={spotifyId} />
-      </div>
+
+      {showPlayer ? (
+        <div className="player">
+          <Player spotifyId={spotifyId} />
+        </div>
+      ) : null}
+
       <img src={coverUrl} alt={`Cover art of album ${title}`} />
     </div>
   );
